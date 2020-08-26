@@ -35,7 +35,7 @@ function App() {
     <div>
       <ul data-testid="repository-list">
 
-        {repositories.map(repository => {
+        {repositories.map(repository => (
           <li key={repository.id}>
             {repository.title}
 
@@ -43,7 +43,7 @@ function App() {
               Remover
             </button>
           </li>
-        })}
+        ))}
         
       </ul>
 
